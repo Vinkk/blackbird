@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+require('laravel-elixir-sass-compass');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +12,21 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.less('app.less');
+
+var paths = {
+    jquery: 'vendor/bower_components/jquery/',
+    bootstrap: 'vendor/bower_components/bootstrap-sass-official/assets/'
+}
+
+elixir(function (mix) {
+    mix
+        .compass("app.scss", "public/css/", {
+            style: "nested",
+            sass : "./resources/assets/sass"
+        })
+        .copy(paths.bootstrap + 'fonts/bootstrap/**', 'public/fonts')
+        .scripts([
+            paths.jquery + 'dist/jquery.js',
+            paths.bootstrap + 'javascripts/bootstrap.js'
+        ], 'public/js/app.js', './');
 });

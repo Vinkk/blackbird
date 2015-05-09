@@ -1,0 +1,22 @@
+{
+  "name": "blackbird",
+  "version": "*",
+  "homepage": "https://github.com/Vinkk/blackbird",
+  "authors": [
+    "Ali Gajani <aligajani@gmail.com>"
+  ],
+  "description": "bower",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "font-awesome": "~4.3.0"
+  }
+}

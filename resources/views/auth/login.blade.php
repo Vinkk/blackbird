@@ -50,7 +50,9 @@
 								<button type="submit" class="btn btn-primary">Login</button>
 
 								<a class="btn btn-link" href="{{ url('/password/email') }}">Forgot Your Password?</a>
-							</div>
+                                <i class="glyphicon glyphicon-search"></i>
+
+                            </div>
 						</div>
 					</form>
 				</div>

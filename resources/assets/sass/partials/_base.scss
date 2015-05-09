@@ -1,0 +1,6 @@
+$borderRadius : 10px;
+body {
+  .panel .panel-heading {
+    @include border-radius($borderRadius);
+  }
+}
