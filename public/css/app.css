@@ -3598,5 +3598,5 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media print { /* line 18, ../../vendor/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print { display: none !important; } }
-/* line 3, ../../resources/assets/sass/partials/_base.scss */
-body .panel .panel-heading { -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+/* line 1, ../../resources/assets/sass/partials/_base.scss */
+body { font-family: "Lato", Helvetica, Arial, sans-serif; font-weight: lighter; }

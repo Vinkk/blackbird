@@ -1,5 +1,5 @@
 var elixir = require('laravel-elixir');
-require('laravel-elixir-sass-compass');
+var compass = require('laravel-elixir-sass-compass');
 
 /*
  |--------------------------------------------------------------------------
@@ -18,9 +18,9 @@ var paths = {
     bootstrap: 'vendor/bower_components/bootstrap-sass-official/assets/'
 }
 
-elixir(function (mix) {
+elixir(function (mix, compass) {
     mix
-        .compass("app.scss", "public/css/", {
+        compass.compass("app.scss", "public/css/", {
             style: "nested",
             sass : "./resources/assets/sass"
         })
